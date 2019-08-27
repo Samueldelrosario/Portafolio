@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Comptible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="max-width-144">
+            <section class="cont-logo">
+                <!-- <img src="imagenes/LOGO-B.png" alt=""> -->
+                <section class="text-company" style="display: none;">
+                    <p style="font-weight: bold;">samuel</p>
+                    <p>Guerra</p>
+                </section>
+            </section>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#aspecto-profesional">Aspecto Profesional</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="cont-galery">
+        <section class="max-width-144">
+                <section class="cont-image">
+                    <!--aqui ira la imagen-->
+                </section>
+
+                <!-- <section class="cont-slider"> -->
+                    <!-- Swiper -->
+                    <!-- <div class="swiper-container"> -->
+                        <!-- <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-modification"></div>
+                        <div class="swiper-slide swiper-slide-modification"></div>
+                        <div class="swiper-slide swiper-slide-modification"></div>
+                        <div class="swiper-slide swiper-slide-modification"></div> -->
+                        <!-- </div> -->
+                        <!-- Add Pagination -->
+                        <!-- <div class="swiper-pagination"></div> -->
+                        <!-- Add Arrows -->
+                        <!-- <div class="swiper-button-next"></div> -->
+                        <!-- <div class="swiper-button-prev"></div> -->
+                    <!-- </div> -->
+
+                <!-- </section> -->
+
+                <section class="cont-slider-2">
+                  <div class="pagination"></div>
+                </section>
+        </section>
+    </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/swiper.js"></script>
+<script>
+        var appendNumber = 4;
+        var prependNumber = 1;
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 5,
+          spaceBetween: 30,
+          
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+        document.querySelector('.prepend-2-slides').addEventListener('click', function (e) {
+          e.preventDefault();
+          swiper.prependSlide([
+            '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>',
+            '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>'
+            ]);
+        });
+        document.querySelector('.prepend-slide').addEventListener('click', function (e) {
+          e.preventDefault();
+          swiper.prependSlide('<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>');
+        });
+        document.querySelector('.append-slide').addEventListener('click', function (e) {
+          e.preventDefault();
+          swiper.appendSlide('<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>');
+        });
+        document.querySelector('.append-2-slides').addEventListener('click', function (e) {
+          e.preventDefault();
+          swiper.appendSlide([
+            '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>',
+            '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>'
+            ]);
+        });
+      </script>
+</html>
