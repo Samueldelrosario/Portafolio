@@ -3,15 +3,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Comptible" content="ie=edge">
-    <title>one property</title>
+    <title>samuel del rosario</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/ccc-pages.css">
+    <link rel="stylesheet" href="css/css-modales.css">
     
 </head>
 <body>
-    <header class="header">
+    <header class="header ">
         <div class="max-width-144">
             <section class="cont-logo">
                 <img src="imagenes/logo samuel.png" alt="">
@@ -39,10 +41,30 @@
                 <h2 class="what-who">Disenador Grafico - Modelador  3D - Animacion 2D y 3D - Frond End and Web designer - Ilustrador</h2>
             </section>
             <!-- <img src="imagenes/arnold.png" alt="" class="arnold"> -->
-            <div class="logo-circle"><img src="imagenes/logo-samuel2.png" alt="">
+            <div class="logo-circle" data-toggle="modal" data-target="#mision"><img src="imagenes/logo-samuel2.png" alt="">
             </div>
         </section>
     </section>
+
+<!------------------------- MODALES ------------------------->
+    <div class="modal fade" id="mision" tabindex="-1" role="dialog" aria-labelledby="misionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modification-modal-dialog-mision" role="document">
+            <div class="modal-content modification-modal-content-mision">
+                <button type="button" class="close button-close-mision" data-dismiss="modal" aria-label="Close">
+                    X
+                </button>
+                <section class="cont-info-mision">
+                    <section class="foto-mision"></section>
+                    <section></section>
+                    <section>
+                        <h5 class="modal-title title-modal-mision" id="misionModalLabel">Samuel del Rosario</h5>
+                        <p class="text-modal-mision">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at </p>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </div>
+
 <!-------------------------- ASPECTO PROFESIONAL ----------------------->
     <a href="" name="aspecto-profesional"></a>
     <section class="cont-profesional cont-profesional-2">
@@ -112,6 +134,11 @@
                         <section class="td">JS</section>
                         <section class="td"><div class="barra js-script"></div></section>
                     </section>
+
+                    <section class="tr">
+                            <section class="td">bootstrap</section>
+                            <section class="td"><div class="barra js-script"></div></section>
+                        </section>
                 </section>
 
             </section>
@@ -224,14 +251,14 @@
                     <h2 class="contact-text">CONTACTO</h2>
                     <section class="formulario-contact">
                         <p class="description-contact">Escribeme para saber cualquier informacion que necesites</p>
-                        <form action="respuesta.php" method="POST">
+                        <form action="https://formspree.io/samueldelrosario001@gmail.com" method="POST">
                             <div class="name-email">
                                 <input type="text" name="nombre" placeholder="Nombre">
-                                <input type="text" placeholder="Email">
+                                <input type="text" name="email"placeholder="Email">
                             </div>
-                            <input class="input-telephone" type="text" placeholder="Telefono" name="" id="">
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                            <button class="submit">Enviar</button>
+                            <input class="input-telephone" type="text" placeholder="Telefono" name="telefono" id="">
+                            <textarea name="texto" id="" cols="30" rows="10"></textarea>
+                            <button class="submit" value="send">Enviar</button>
                             <!-- <input class="submit" type="submit"> -->
                         </form>
                     </section>

@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+html{font-size: 62.5%;}
+body{-webkit-font-smoothing: antialiased;}
+h1, h2, h3, p{margin:0;}
+
+.cont-portafolio .max-width-144, .cont-profesional .max-width-144{padding: 18rem 15rem;}
+.header .max-width-144, .cont-name .max-width-144{padding: 0 5rem;}
+.position-relative{position: relative;}
+.menu-fixed{position: fixed;}
+
+.imagen-father-design{
+    width: 100%;
+    height: 50%;
+    background-image: ;
+    background-color: blanchedalmond;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:10.7rem;
+}
+
+
+
+/* cont-galery */
+.cont-galery{
+    /* height: calc(100% - 10.7rem); */
+    width: 100%;
+    background-color: black;
+    /* margin-top: auto; */
+
+}
+
+.cont-galery .max-width-144{
+    padding: 10rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.galery-sec1-Design{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 4rem;
+
+    align-items: center;
+}
+
+.galery-sec1-Design:last-child{
+    margin-top: 3rem;
+}
+
+.foto-1{
+    width: 100%;
+    height: 40rem;
+    background-color: #2B2B2B;
+}
+
+
+.foto-2{
+    width: 100%;
+    height: 80rem;
+    background-color: #2B2B2B;
+}
+
+.title-page-designer{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.text-page-designer{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #7A7A7A;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cont-image{
+    /* height: 70%; */
+    width: 100%;
+    /* background: rgba(255, 255, 255, 0.06); */
+    background-color: white;
+    border-radius: 3px;
+}
+
+.swiper-slide-modification{
+    background: white;
+    overflow: hidden;
+}
+
+.swiper-slide-modification:hover{
+    cursor: pointer;
+}
+
+.cont-slider{
+    height: 25%;
+    padding: 5% 0;
+
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    }
+    .cont-slider {
+    position: relative;
+    height: 30rem;
+    }
+    
+    .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+
+.cont-image{
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.cont-slider-2{
+    padding: 4rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-left: 3rem;
+
+    background-color: #2B2B2B;
+    transition: 0.3s;
+}
+
+.pagination:hover{
+    cursor: pointer;
+    background-color: rgba(142, 204, 108, 0.5)
+}
+
+.flecha-1, .flecha-2{
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    background-color: #8ECC6C;
+    border-radius: 50%;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flecha-1{
+    right: 13rem;
+    bottom: 3rem;
+    transition:0.3s;
+}
+
+.flecha-2{
+    right: 5rem;
+    bottom: 3rem;
+    transition:0.3s;
+}
+
+.flecha-1:hover, .flecha-2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.cont-image li{
+    padding: 3rem;
+    /* height:-webkit-fill-available; */
+
+    display: flex;
+
+}
+
+.img-slider-diseno{
+    width: 25%;
+    height: auto;
+}
+
+.info-img-slider{
+    padding: 0 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-img-slider h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    /* color: rgba(255, 255, 255, 0.5); */
+    /* color: white; */
+}
+
+.info-img-slider h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    /* color: rgba(255, 255, 255, 0.5); */
+    /* color: white; */
+}
+
+.info-img-slider p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+
+    padding: 2rem 0;
+    /* color:rgba(255, 255, 255, 0.09); */
+    /* color: white; */
+}

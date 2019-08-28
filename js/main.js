@@ -3,7 +3,7 @@ $(document).ready(function () {
 	var altura = $('.header').offset().top;
 
 	$(window).on('scroll', function(){
-		if($(window).scrollTop() > altura){
+		if($(window).scrollTop() >= altura){
 			$('.header').addClass('header-sombra');
 		}else{
 			$('.header').removeClass('header-sombra');
