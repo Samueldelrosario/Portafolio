@@ -89,8 +89,12 @@
         font-size: 3.7rem;
     }
 
+    .header .max-width-144, .cont-name .max-width-144{
+        padding: 0 3rem;
+    }
+
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
-        background-color: white!important;
+        background-color: #6a6a6a!important;
     }
 
     .cont-name p{
@@ -98,8 +102,8 @@
     }
 
     .what-who{
-        font-size: 1.5rem;
-        padding: 0 3rem;
+        font-size: 1.2rem;
+        /* padding: 0 3rem; */
         width: inherit;
     }
 
@@ -108,12 +112,14 @@
     }
 
 
-
+    .header .max-width-144{
+        height: 7.7rem;
+    }
 
     .header div ul{
         /* display: none; */
         position: fixed;
-        top: 10.7rem;
+        top: 7.7rem;
         z-index: 999;
         /* display: flex; */
         flex-direction: column;
@@ -137,8 +143,12 @@
         background-color: rgba(255, 255, 255, 0.1);
         z-index: 888;
         left: 0;
-        top: 10.7rem;
+        top: 7.7rem;
         position: fixed;
+    }
+
+    .cont-name .max-width-144{
+        padding-bottom: 6rem;
     }
 
     .header div ul li{
@@ -161,7 +171,10 @@
     .logo-circle{
         width: 7rem;
         height: 7rem;
-        left: calc(50% - 3.5rem)
+        left: calc(50% - 3.5rem);
+        bottom: -3.5rem;
+
+        /* display: none; */
     }
 
 
@@ -172,7 +185,7 @@
 
     .display-grid-name{
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
     }
 
