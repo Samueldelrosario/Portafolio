@@ -77,4 +77,8 @@ $(document).ready(function () {
 	// 	// if($('.info-photoshop').)
 	// 	$('.info-photoshop').fadeIn();
 	// })
+
+	$('.hamburger').click(function(){
+		
+	});
 });

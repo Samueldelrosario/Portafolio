@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="css/ccc-pages.css">
     <link rel="stylesheet" href="css/css-modales.css">
+    <link rel="stylesheet" href="css/responsive/css-principal-page.css">
+
+    <link href="css/hamburgers.css" rel="stylesheet">
     
 </head>
 <body>
@@ -29,6 +32,13 @@
                 <li><a href="#portafolio">Portafolio</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
+            <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+            <div class="cuadro-blur"></div>
         </div>
     </header>
 <!-------------------------- NOMRBE seiken no blacksmith, quah zhi shou----------------------->
@@ -74,71 +84,136 @@
             <P class="aspect-profesional-subTitle">Conocimientos dentro del area</P>
             <section>
                 <section class="table" style="width:100%">
-                    <section class="tr">
+                    <section class="tr illustrator-active">
                         <section class="td">Illustrator</section>
-                        <section class="td"><div class="barra illustrator"></div></section>
+                        <section class="td">
+                            <div class="barra illustrator"></div>
+                            <div class="info-illustrator">
+                                <h2>Illustrator</h2>
+                                <P> 65%</P>
+                            </div>
+                        </section>
                     </section>
 
-                    <section class="tr" >
+                    <section class="tr photoshop-active">
                         <section class="td">Photoshop</section>
                         <section class="td">
                             <div class="barra photoshop"></div>
                             <div class="info-photoshop">
                                 <h2>Photoshop</h2>
-                                <P>domina el 65%</P>
+                                <P>65%</P>
                             </div>
                         </section>
                     </section>
 
-                    <section class="tr">
+                    <section class="tr indesign-active">
                         <section class="td">Indesign</section>
-                        <section class="td"><div class="barra indesign"></div></section>
-                    </section>
-
-                    <section class="tr">
-                        <section class="td">maya 3D</section>
-                        <section class="td"><div class="barra maya"></div></section>
-                    </section>
-
-                    <section class="tr">
-                        <section class="td">Blender</section>
-                        <section class="td"><div class="barra blender"></div></section>
-                    </section>
-
-                    <section class="tr">
-                        <section class="td">After effects</section>
-                        <section class="td"><div class="barra after"></div></section>
-                    </section>
-
-                    <section class="tr">
-                        <section class="td">Adobe Premiere</section>
-                        <section class="td"><div class="barra premiere"></div></section>
-                    </section>
-
-                    <section class="tr">
-                        <section class="td">Wix</section>
-                        <section class="td"><div class="barra wix"></div></section>
-                    </section>
-
-                    <section class="tr">
-                        <section class="td">Html</section>
-                        <section class="td"><div class="barra html-5"></div></section>
-                    </section>
-
-                    <section class="tr">
-                        <section class="td">CSS</section>
-                        <section class="td"><div class="barra css-3"></div></section>
-                    </section>
-
-                    <section class="tr">
-                        <section class="td">JS</section>
-                        <section class="td"><div class="barra js-script"></div></section>
-                    </section>
-
-                    <section class="tr">
-                            <section class="td">bootstrap</section>
-                            <section class="td"><div class="barra js-script"></div></section>
+                        <section class="td">
+                            <div class="barra indesign"></div>
+                            <div class="info-indesign">
+                                <h2>Indesign</h2>
+                                <P>65%</P>
+                            </div>
                         </section>
+                    </section>
+
+                    <section class="tr maya-active">
+                        <section class="td">maya 3D</section>
+                        <section class="td">
+                            <div class="barra maya"></div>
+                            <div class="info-maya">
+                                <h2>Maya 3D</h2>
+                                <P>65%</P>
+                            </div>
+                        </section>
+                    </section>
+
+                    <section class="tr blender-active">
+                        <section class="td">Blender</section>
+                        <section class="td">
+                            <div class="barra blender"></div>
+                            <div class="info-blender">
+                                <h2>Blender</h2>
+                                <P>65%</P>
+                            </div>
+                        </section>
+                    </section>
+
+                    <section class="tr after-active">
+                        <section class="td">After effects</section>
+                        <section class="td">
+                            <div class="barra after"></div>
+                            <div class="info-after">
+                                <h2>After effects</h2>
+                                <P>65%</P>
+                            </div>
+                        </section>
+                    </section>
+
+                    <section class="tr premiere-active">
+                        <section class="td">Premiere</section>
+                        <section class="td">
+                            <div class="barra premiere"></div>
+                            <div class="info-premiere">
+                                <h2>Adobe Premiere</h2>
+                                <P>65%</P>
+                            </div>
+                        </section>
+                    </section>
+
+                    <section class="tr wix-active">
+                        <section class="td">Wix</section>
+                        <section class="td">
+                            <div class="barra wix"></div>
+                            <div class="info-wix">
+                                <h2>wix</h2>
+                                <P>65%</P>
+                            </div>
+                        </section>
+                    </section>
+
+                    <section class="tr html-active">
+                        <section class="td">Html</section>
+                        <section class="td">
+                            <div class="barra html-5"></div>
+                            <div class="info-html">
+                                <h2>HTML 5</h2>
+                                <P>65%</P>
+                            </div>
+                        </section>
+                    </section>
+
+                    <section class="tr css-active">
+                        <section class="td">CSS</section>
+                        <section class="td">
+                            <div class="barra css-3"></div>
+                            <div class="info-css">
+                                <h2>CSS</h2>
+                                <P>65%</P>
+                            </div></section>
+                    </section>
+
+                    <section class="tr js-active">
+                        <section class="td">JS</section>
+                        <section class="td">
+                            <div class="barra js-script"></div>
+                            <div class="info-js">
+                                <h2>JS</h2>
+                                <P>65%</P>
+                            </div>
+                        </section>
+                    </section>
+
+                    <section class="tr bootstrap-active">
+                        <section class="td">bootstrap</section>
+                        <section class="td">
+                            <div class="barra js-script"></div>
+                            <div class="info-bootstrap">
+                                <h2>bootstrap</h2>
+                                <P>65%</P>
+                            </div>
+                        </section>
+                    </section>
                 </section>
 
             </section>
@@ -166,7 +241,7 @@
 
                 <a class="hover-boxes" href="ilustracion.html" style="text-decoration: none;">
                     <div class="boxes">
-                        <div class="designer"></div>
+                        <div class="illustrationr"></div>
                     </div>
                     <P class="activo padding-hover-boxes">ILUSTRACION</P>
                     <p class="descripcion-boxes-portafolio" style="color: white;">hacemos de ti y de tu empresa la imagen adecuada a traves del diseno.</p>
@@ -260,6 +335,14 @@
                             <textarea name="texto" id="" cols="30" rows="10"></textarea>
                             <button class="submit" value="send">Enviar</button>
                             <!-- <input class="submit" type="submit"> -->
+
+                            <section class="cont-redes-sociales">
+                                <a href=""><img src="imagenes/redes-sociales/redes-02.png" alt=""></a>
+                                <a href=""><img src="imagenes/redes-sociales/redes-03.png" alt=""></a>
+                                <a href=""><img src="imagenes/redes-sociales/redes-04.png" alt=""></a>
+                                <a href="https://www.facebook.com/"><img src="imagenes/redes-sociales/redes_Mesa de trabajo 1.png" alt=""></a>
+                            </section>
+                            
                         </form>
                     </section>
                 </section>
@@ -275,4 +358,14 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+<script>
+    // Look for .hamburger
+    var hamburger = document.querySelector(".hamburger");
+    // On click
+    hamburger.addEventListener("click", function() {
+        // Toggle class "is-active"
+        hamburger.classList.toggle("is-active");
+        // Do something else, like open/close menu
+    });
+</script>
 </html>

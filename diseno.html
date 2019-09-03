@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/css.css">
         <link rel="stylesheet" href="css/ccc-pages.css">
-        
+        <link rel="stylesheet" href="css/css-modales.css">
     </head>
 <body>
     <header class="header ">
@@ -31,21 +31,26 @@
         </div>
     </header>
     <section class="imagen-father-design">
-
+        <h2>SAMUEL DEL ROSARIO</h2>
+        <p>Diseno Grafico</p>
     </section>
     <section class="cont-galery">
         <section class="max-width-144">
             <section class="galery-sec1-Design">
-                <section>
+                <section class="hover-design" data-toggle="modal" data-target="#design">
                     <p class="text-page-designer">01</p>
-                    <div class="foto-1"></div>
+                    <div class="foto-1">
+                        <div class="chocolate-embajador-gallery"></div>
+                    </div>
                     <h2 class="title-page-designer">Chocolate</h2>
                     <p class="text-page-designer">ver mas</p>
                 </section>
-                <section>
+                <section class="hover-design" data-toggle="modal" data-target="#shape-of-water">
                     <p class="text-page-designer">02</p>
-                    <div class="foto-2"></div>
-                    <h2 class="title-page-designer">Chocolate</h2>
+                    <div class="foto-2">
+                        <div class="shape-water-gallery"></div>
+                    </div>
+                    <h2 class="title-page-designer">The shape of water</h2>
                     <p class="text-page-designer">ver mas</p>
                 </section>
             </section>
@@ -65,8 +70,43 @@
             </section>
         </section>
     </section>
+    <section class="modales-general-cont">
+
+<!------------------------- MODALES ------------------------->
+    <!-- first modal -->
+    <div class="modal fade " id="design" tabindex="-1" role="dialog" aria-labelledby="designModalLabel" aria-hidden="true">
+        <div class="modal-dialog modification-modal-dialog-design" role="document">
+            <div class="modal-content modification-modal-content-design">
+                <button type="button" class="close button-close-design" data-dismiss="modal" aria-label="Close">
+                    X
+                </button>
+                <section class="cont-info-design">
+                    <img src="imagenes/chocolate-embajador.jpg" alt="">
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- second modal -->
+    <div class="modal fade " id="shape-of-water" tabindex="-1" role="dialog" aria-labelledby="designModalLabel" aria-hidden="true">
+        <div class="modal-dialog modification-modal-dialog-design" role="document">
+            <div class="modal-content modification-modal-content-design">
+                <button type="button" class="close button-close-design" data-dismiss="modal" aria-label="Close">
+                    X
+                </button>
+                <section class="cont-info-design">
+                    <img src="imagenes/shape-of water.jpg" alt="">
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+    </section>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/swiper.js"></script>
 <script>

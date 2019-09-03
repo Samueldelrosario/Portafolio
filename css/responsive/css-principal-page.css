@@ -1,0 +1,249 @@
+/* =================================================================== IPAD QUERY ====================================================================== */
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+    .cont-portafolio .max-width-144, .cont-profesional .max-width-144{
+        padding: 18rem 8rem;
+    }
+    .cont-name{
+        background-image:inherit;
+    }
+
+    .cont-logo img{
+        height: 4rem;
+    }
+
+    .display-grid-name{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header div ul{
+        margin: 0!important;
+    }
+
+    .header div ul li{
+        margin-right: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .cont-info-mision{
+        margin-top: 12rem;
+        display: block;
+    }
+
+    .text-habilitys{
+        padding: 0;
+    }
+
+    .cont-boxes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flex-end, .second-box-experience{
+        padding: 0 5rem;
+    }
+
+    .formulario-contact{
+        display: block;
+    }
+
+    .description-contact{
+        margin-bottom: 2rem;
+    }
+
+
+
+    .contact-text{
+        margin-top: 0;
+    }
+
+    .cont-contact{
+        height: inherit;
+    }
+
+    .cont-contact .prueba{
+        width: 100%;
+    }
+
+    .contact{
+        position: inherit;
+        top: 0;
+        background-color: transparent;
+
+        padding: 6rem 0;
+    }
+
+    .formulario-contact{
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+
+
+}
+
+
+/* =================================================================== PHONE QUERY ====================================================================== */
+@media only screen and (max-width: 767px){
+    .title-name{
+        font-size: 3.7rem;
+    }
+
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+        background-color: white!important;
+    }
+
+    .cont-name p{
+        font-size: 3.7rem;
+    }
+
+    .what-who{
+        font-size: 1.5rem;
+        padding: 0 3rem;
+        width: inherit;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+
+
+
+    .header div ul{
+        display: none;
+        position: fixed;
+        top: 10.7rem;
+        z-index: 999;
+        /* display: flex; */
+        flex-direction: column;
+        /* align-items: end; */
+        background-color: #161616;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        padding: 0 3rem;
+    }
+
+    .cuadro-blur{
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+        z-index: 888;
+        left: 0;
+        top: 10.7rem;
+        position: fixed;
+    }
+
+    .header div ul li{
+        margin: 0;
+        padding: 2rem;
+    }
+
+    .cont-name{
+        background-image: inherit;
+    }
+
+    .aspect-professional{
+        font-size: 3.4rem;
+    }
+
+    .aspect-profesional-subTitle{
+        font-size: 1.8rem;
+    }
+
+    .logo-circle{
+        width: 7rem;
+        height: 7rem;
+        left: calc(50% - 3.5rem)
+    }
+
+
+
+    .cont-logo img{
+        height: 4rem;
+    }
+
+    .display-grid-name{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cont-portafolio .max-width-144, .cont-profesional .max-width-144{
+        padding: 10rem 5rem;
+    }
+
+    .cont-boxes{
+        display: block;
+    }
+
+    .text-habilitys{
+        padding: 0;
+    }
+
+    /* Experiencia */
+    .cont-boxes-experience{
+        display: block;
+        border-top: 2px solid #8ECC6C;
+    }
+
+    .flex-end, .second-box-experience{
+        padding: 3rem 0;
+    }
+
+    .border-right-experience, .border-left-experience{
+        border: none;
+    }
+
+    .second-box-experience{
+        text-align: left;
+    }
+
+    .circles-experience-second, .circles-experience{
+        left: -1.3rem;
+        top: -1.3rem;
+    }
+
+    /* Contact */
+    .contact{
+        background-color: transparent;
+    }
+    .contact, .cont-contact .prueba {
+        position: inherit;
+    }
+
+    .cont-contact .prueba{
+        width: 100%;
+    }
+
+    .formulario-contact{
+        display: block;
+        /* padding: 8rem 0; */
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .contact-text{
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+
+    .cont-contact{
+        height: inherit;
+        padding: 5rem 5rem;
+    }
+
+    .description-contact{
+        padding: 0;
+    }
+
+    .name-email{
+        display: block;
+    }
+
+    .name-email input{
+        margin-top: 3rem;
+    }
+}

@@ -46,3 +46,45 @@
     top: -5rem;
     border: 10px solid white;
 }
+
+
+/* modal para diseno */
+.modification-modal-dialog-design{
+    max-width: inherit!important;
+    /* padding: 0 25%!important; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%!important;
+}
+
+.modification-modal-content-design{
+    /* padding: 3rem; */
+    position: relative;
+    height: fit-content;    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    
+    background-color: transparent;
+    border: none!important;
+}
+
+.button-close-design{
+    margin-left: auto!important;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+    padding: 0!important;
+
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.cont-info-design img{
+    width: auto;
+    height: 70%;
+}
