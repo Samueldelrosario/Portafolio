@@ -85,12 +85,20 @@
 
 /* =================================================================== PHONE QUERY ====================================================================== */
 @media only screen and (max-width: 767px){
+
+    .hamburger{
+        padding: 0!important;
+    }
     .title-name{
         font-size: 3.7rem;
     }
 
     .header .max-width-144, .cont-name .max-width-144{
-        padding: 0 3rem;
+        padding: 0 2rem;
+    }
+
+    .cont-portafolio .max-width-144, .cont-profesional .max-width-144{
+        padding: 10rem 2rem;
     }
 
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
@@ -189,22 +197,53 @@
         justify-content: center;
     }
 
-    .cont-portafolio .max-width-144, .cont-profesional .max-width-144{
-        padding: 10rem 5rem;
-    }
-
     .cont-boxes{
-        display: block;
+        display: grid;
+        grid-template-columns: repeat(5, 80%);
+        overflow-y: scroll;
     }
 
     .text-habilitys{
         padding: 0;
     }
+    /* manejo profesional */
+    .table .tr{
+        display: block;
+    }
+
+    .td{
+        text-align: left;
+    }
+
+    .table .td:last-of-type{
+        padding: 0;
+    }
 
     /* Experiencia */
+    .cont-experience{
+        padding: 10rem 2rem;
+    }
+
+    .position-in-company{
+        margin-top: 2rem;
+    }
+
+    .experience-text{
+        margin-bottom:2rem;
+    }
+
+    .company-experience{
+        margin-top: 1.5rem;
+    }
+
+    .position-in-company{
+        margin-top: 0rem;
+        font-size: 1.5rem;
+    }
+
     .cont-boxes-experience{
         display: block;
-        border-top: 2px solid #8ECC6C;
+        /* border-top: 2px solid #8ECC6C; */
     }
 
     .flex-end, .second-box-experience{
@@ -222,6 +261,7 @@
     .circles-experience-second, .circles-experience{
         left: -1.3rem;
         top: -1.3rem;
+        display: none;
     }
 
     /* Contact */
@@ -250,7 +290,7 @@
 
     .cont-contact{
         height: inherit;
-        padding: 5rem 5rem;
+        padding: 5rem 2rem;
     }
 
     .description-contact{
