@@ -237,6 +237,10 @@ h1, h2, h3, p{margin:0;}
     position: relative;
 }
 
+.porcent-xs{
+    display: none;
+}
+
 .info-illustrator, .info-photoshop, .info-indesign, .info-maya, .info-blender, .info-after, .info-premiere, .info-wix, .info-html, .info-css, .info-js, .info-bootstrap{
     /* background-color: white; */
     color: white;

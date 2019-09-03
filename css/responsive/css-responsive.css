@@ -162,6 +162,7 @@
     .header div ul li{
         margin: 0;
         padding: 2rem;
+        text-align: center!important;
     }
 
     .cont-name{
@@ -209,6 +210,7 @@
     /* manejo profesional */
     .table .tr{
         display: block;
+        margin-bottom: 3rem;
     }
 
     .td{
@@ -217,6 +219,27 @@
 
     .table .td:last-of-type{
         padding: 0;
+    }
+
+    .porcent-xs{
+        display: block;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+    }
+
+   
+
+    .illustrator-active:hover .info-illustrator, .photoshop-active:hover .info-photoshop, .indesign-active:hover .info-indesign, .maya-active:hover .info-maya, .blender-active:hover .info-blender, .after-active:hover .info-after, .premiere-active:hover .info-premiere, .wix-active:hover .info-wix, .html-active:hover .info-html, .css-active:hover .info-css, .js-active:hover .info-js, .bootstrap-active:hover .info-bootstrap{
+        display: none;
+    }
+    .cont-habilitys h2{
+        font-size: 3.2rem;
+        text-align: left;
+    }
+    
+    .text-habilitys{
+        font-size: 1.5rem;
+        text-align: left;
     }
 
     /* Experiencia */
@@ -303,5 +326,25 @@
 
     .name-email input{
         margin-top: 3rem;
+    }
+    .formulario-contact input, textarea, .submit{
+        padding: 1.8rem 1rem;
+    }
+
+    .inventando{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    
+        background:black;
+        background:rgba(0,0,0,0.8);
+    
+        filter:blur(4px);
+        -o-filter:blur(4px);
+        -ms-filter:blur(4px);
+        -moz-filter:blur(4px);
+        -webkit-filter:blur(4px);
     }
 }
