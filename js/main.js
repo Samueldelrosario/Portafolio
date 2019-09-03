@@ -79,6 +79,41 @@ $(document).ready(function () {
 	// })
 
 	$('.hamburger').click(function(){
-		
+		if($('.hamburger').hasClass('is-active')){
+			$('.cuadro-blur').fadeIn();
+			$('.header div ul').animate({
+				right: '0'
+			});
+			$('.filter').addClass('filter-blur');
+
+		}else{
+			$('.cuadro-blur').fadeOut();
+			$('.header div ul').animate({
+				right: '-55%'
+			});
+			$('.filter').removeClass('filter-blur');
+		}
 	});
+
+	$('.cuadro-blur').click(function(){
+			$('.cuadro-blur').fadeOut();
+			$('.header div ul').animate({
+				right: '-55%'
+			});
+			$('.filter').removeClass('filter-blur');
+			$('.hamburger').removeClass('is-active');
+	});
+
+	$('.header div ul li').click(function(){
+		$('.cuadro-blur').fadeOut();
+		$('.header div ul').animate({
+			right: '-55%'
+		});
+		$('.filter').removeClass('filter-blur');
+		$('.hamburger').removeClass('is-active');
+});
+
+
+
+
 });
