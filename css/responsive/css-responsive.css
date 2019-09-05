@@ -78,6 +78,33 @@
         padding: 0;
     }
 
+    /* portafolio */
+    .portafolio-text{
+        font-size: 4rem;
+    }
+
+    .cont-boxes-frst-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    .cont-boxes-frst-section, .cont-boxes-second-section{
+        height: 20rem;
+    }
+
+    .cont-boxes-frst-section section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .cont-boxes-second-section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
+        margin-top: 2rem;
+    }
+
 
 
 }
@@ -170,11 +197,11 @@
     }
 
     .aspect-professional{
-        font-size: 3.4rem;
+        font-size: 2.7rem;
     }
 
     .aspect-profesional-subTitle{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .logo-circle{
@@ -204,13 +231,12 @@
         overflow-y: scroll;
     }
 
-    .text-habilitys{
-        padding: 0;
-    }
+    
     /* manejo profesional */
     .table .tr{
         display: block;
         margin-bottom: 3rem;
+        font-size: 1.5rem;
     }
 
     .td{
@@ -233,13 +259,108 @@
         display: none;
     }
     .cont-habilitys h2{
-        font-size: 3.2rem;
+        font-size: 3rem;
         text-align: left;
     }
     
     .text-habilitys{
         font-size: 1.5rem;
         text-align: left;
+        padding: 0;
+        width: 90%;
+    }
+    /* portafolio */
+    .cont-portafolio{
+        padding-bottom: 0;
+    }
+
+    .cont-boxes-prueba{
+        display: grid;
+        grid-template-columns: 100% 100%;
+        overflow: scroll;
+        padding-bottom: 0.8rem;
+    }
+
+    .cont-boxes-prueba::-webkit-scrollbar {
+        width: 5px;     /* Tamaño del scroll en vertical */
+        height: 5px;    /* Tamaño del scroll en horizontal */
+        display: block;  /* Ocultar scroll */
+        /* background-color: white; */
+        margin-top: 3rem;
+        background-color: transparent;
+    }
+
+    .cont-boxes-prueba::-webkit-scrollbar-thumb {
+        background: #1e1e1e;
+        border-radius: 4px;
+        display: block;
+        margin-top: 4px;
+    }
+
+    .cont-boxes-prueba::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 4px;
+        display: block;
+    }
+
+    .background-white-prueba{
+        -webkit-box-shadow: 14px 10px 32px -20px rgba(0,0,0,0.32);
+        -moz-box-shadow: 14px 10px 32px -20px rgba(0,0,0,0.32);
+        box-shadow: 14px 10px 32px -20px rgba(0,0,0,0.32);
+    }
+
+    .portafolio-info{
+        display: none;
+    }
+    .cont-boxes-frst-section{
+        display: block;
+    }
+
+    .cont-boxes-frst-section, .cont-boxes-second-section{
+        height: 20rem;
+    }
+
+    .cont-boxes-frst-section section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        /* height: 20rem; */
+        height: 100%;
+    }
+
+    .cont-boxes-second-section {
+        display: grid;
+        grid-template-columns: repeat(4, 50%);
+        column-gap: 2rem;
+        margin-left: 2rem;
+        /* height: 20rem; */
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .div-titles-portafolio{
+        font-size: 1.2rem;
+    }
+
+    .div-titles-portafolio{
+        opacity: 1;
+    }
+
+    .background-white-prueba:hover{
+        transform: scale(1);
+    }
+
+    .ocultar-title-portafolio{
+        display: block;
+    }
+
+    .portafolio-text{
+        font-size: 2.4rem;
+    }
+
+    .text-prueba-portafolio{
+        font-size: 1.3rem;
+        margin-top: 3rem;
     }
 
     /* Experiencia */
@@ -253,20 +374,26 @@
 
     .experience-text{
         margin-bottom:2rem;
+        font-size: 3rem;
     }
 
     .company-experience{
         margin-top: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .position-in-company{
         margin-top: 0rem;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .cont-boxes-experience{
         display: block;
         /* border-top: 2px solid #8ECC6C; */
+    }
+
+    .description-experience{
+        font-size: 1.2rem;
     }
 
     .flex-end, .second-box-experience{
@@ -309,6 +436,7 @@
     .contact-text{
         margin-top: 0;
         margin-bottom: 3rem;
+        font-size: 3rem;
     }
 
     .cont-contact{
@@ -318,6 +446,7 @@
 
     .description-contact{
         padding: 0;
+        font-size: 1.5rem;
     }
 
     .name-email{
@@ -329,22 +458,6 @@
     }
     .formulario-contact input, textarea, .submit{
         padding: 1.8rem 1rem;
-    }
-
-    .inventando{
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-    
-        background:black;
-        background:rgba(0,0,0,0.8);
-    
-        filter:blur(4px);
-        -o-filter:blur(4px);
-        -ms-filter:blur(4px);
-        -moz-filter:blur(4px);
-        -webkit-filter:blur(4px);
+        font-size: 1.2rem;
     }
 }
