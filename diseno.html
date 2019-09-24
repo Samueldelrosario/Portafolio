@@ -7,109 +7,179 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/swiper.css">
         <link rel="stylesheet" href="css/css.css">
         <link rel="stylesheet" href="css/ccc-pages.css">
         <link rel="stylesheet" href="css/css-modales.css">
+        <link rel="stylesheet" href="css/responsive/css-responsive.css">
+        <link href="css/hamburgers.css" rel="stylesheet">
     </head>
 <body>
-    <header class="header ">
-        <div class="max-width-144">
-            <section class="cont-logo">
-                <img src="imagenes/logo samuel.png" alt="">
-                <section class="text-company" style="display: none;">
-                    <p style="font-weight: bold;">samuel</p>
-                    <p>Guerra</p>
+        <header class="header ">
+                <div class="max-width-144">
+                    <section class="cont-logo">
+                        <img src="imagenes/logo samuel.png" alt="">
+                        <section class="text-company" style="display: none;">
+                            <p style="font-weight: bold;">samuel</p>
+                            <p>Guerra</p>
+                        </section>
+                    </section>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#aspecto-profesional">Aspecto Profesional</a></li>
+                        <li><a href="#experiencia">Experiencia</a></li>
+                        <li><a href="#portafolio">Portafolio</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                    <button class="hamburger hamburger--collapse" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+        
+                    <div class="cuadro-blur"></div>
+                </div>
+            </header>
+    <section class="display-none-xs">
+        <section class="imagen-father-design">
+            <h2>SAMUEL DEL ROSARIO</h2>
+            <p>Diseno Grafico</p>
+        </section>
+        <section class="cont-galery">
+            <section class="max-width-144">
+                <section class="galery-sec1-Design">
+                    <section class="hover-design" data-toggle="modal" data-target="#design">
+                        <p class="text-page-designer">01</p>
+                        <div class="foto-1">
+                            <div class="chocolate-embajador-gallery"></div>
+                        </div>
+                        <h2 class="title-page-designer">Chocolate</h2>
+                        <p class="text-page-designer">ver mas</p>
+                    </section>
+                    <section class="hover-design" data-toggle="modal" data-target="#shape-of-water">
+                        <p class="text-page-designer">02</p>
+                        <div class="foto-2">
+                            <div class="shape-water-gallery"></div>
+                        </div>
+                        <h2 class="title-page-designer">The shape of water</h2>
+                        <p class="text-page-designer">ver mas</p>
+                    </section>
                 </section>
-            </section>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#aspecto-profesional">Aspecto Profesional</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
-    </header>
-    <section class="imagen-father-design">
-        <h2>SAMUEL DEL ROSARIO</h2>
-        <p>Diseno Grafico</p>
-    </section>
-    <section class="cont-galery">
-        <section class="max-width-144">
-            <section class="galery-sec1-Design">
-                <section class="hover-design" data-toggle="modal" data-target="#design">
-                    <p class="text-page-designer">01</p>
-                    <div class="foto-1">
-                        <div class="chocolate-embajador-gallery"></div>
-                    </div>
-                    <h2 class="title-page-designer">Chocolate</h2>
-                    <p class="text-page-designer">ver mas</p>
-                </section>
-                <section class="hover-design" data-toggle="modal" data-target="#shape-of-water">
-                    <p class="text-page-designer">02</p>
-                    <div class="foto-2">
-                        <div class="shape-water-gallery"></div>
-                    </div>
-                    <h2 class="title-page-designer">The shape of water</h2>
-                    <p class="text-page-designer">ver mas</p>
-                </section>
-            </section>
-            <section class="galery-sec1-Design">
-                <section>
-                    <p class="text-page-designer">03</p>
-                    <div class="foto-2"></div>
-                    <h2 class="title-page-designer">Chocolate</h2>
-                    <p class="text-page-designer">ver mas</p>
-                </section>
-                <section>
-                    <p class="text-page-designer">04</p>
-                    <div class="foto-1"></div>
-                    <h2 class="title-page-designer">Chocolate</h2>
-                    <p class="text-page-designer">ver mas</p>
+                <section class="galery-sec1-Design">
+                    <section>
+                        <p class="text-page-designer">03</p>
+                        <div class="foto-2"></div>
+                        <h2 class="title-page-designer">Chocolate</h2>
+                        <p class="text-page-designer">ver mas</p>
+                    </section>
+                    <section>
+                        <p class="text-page-designer">04</p>
+                        <div class="foto-1"></div>
+                        <h2 class="title-page-designer">Chocolate</h2>
+                        <p class="text-page-designer">ver mas</p>
+                    </section>
                 </section>
             </section>
         </section>
-    </section>
-    <section class="modales-general-cont">
+        <section class="modales-general-cont">
 
-<!------------------------- MODALES ------------------------->
-    <!-- first modal -->
-    <div class="modal fade " id="design" tabindex="-1" role="dialog" aria-labelledby="designModalLabel" aria-hidden="true">
-        <div class="modal-dialog modification-modal-dialog-design" role="document">
-            <div class="modal-content modification-modal-content-design">
-                <button type="button" class="close button-close-design" data-dismiss="modal" aria-label="Close">
-                    X
-                </button>
-                <section class="cont-info-design">
-                    <img src="imagenes/chocolate-embajador.jpg" alt="">
-                </section>
+    <!------------------------- MODALES ------------------------->
+        <!-- first modal -->
+        <div class="modal fade" id="design" tabindex="-1" role="dialog" aria-labelledby="designModalLabel" aria-hidden="true">
+            <div class="modal-dialog modification-modal-dialog-design" role="document">
+                <div class="modal-content modification-modal-content-design">
+                    <button type="button" class="close button-close-design" data-dismiss="modal" aria-label="Close">
+                        X
+                    </button>
+                    <section class="cont-info-design">
+                        <img src="imagenes/chocolate-embajador.jpg" alt="">
+                    </section>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- second modal -->
-    <div class="modal fade " id="shape-of-water" tabindex="-1" role="dialog" aria-labelledby="designModalLabel" aria-hidden="true">
-        <div class="modal-dialog modification-modal-dialog-design" role="document">
-            <div class="modal-content modification-modal-content-design">
-                <button type="button" class="close button-close-design" data-dismiss="modal" aria-label="Close">
-                    X
-                </button>
-                <section class="cont-info-design">
-                    <img src="imagenes/shape-of water.jpg" alt="">
-                </section>
+        <!-- second modal -->
+        <div class="modal fade " id="shape-of-water" tabindex="-1" role="dialog" aria-labelledby="designModalLabel" aria-hidden="true">
+            <div class="modal-dialog modification-modal-dialog-design" role="document">
+                <div class="modal-content modification-modal-content-design">
+                    <button type="button" class="close button-close-design" data-dismiss="modal" aria-label="Close">
+                        X
+                    </button>
+                    <section class="cont-info-design">
+                        <img src="imagenes/shape-of water.jpg" alt="">
+                    </section>
+                </div>
             </div>
         </div>
-    </div>
-
-
-
+        </section>
     </section>
+
+
+    <div class="modal fade" id="samuel" tabindex="-1" role="dialog" aria-labelledby="designModalLabel" aria-hidden="true">
+            <div class="modal-dialog modification-modal-dialog-design" role="document">
+                <div class="modal-content modification-modal-content-design">
+                    <button type="button" class="close button-close-design" data-dismiss="modal" aria-label="Close">
+                        X
+                    </button>
+                    <section class="cont-info-design">
+                        <img src="imagenes/chocolate-embajador.jpg" alt="">
+                    </section>
+                </div>
+            </div>
+        </div>
+    <!------------------------- slider for job ------------------------->
+    <div class="swiper-container display-block-xs">
+        <div class="swiper-wrapper" >
+            <div class="swiper-slide" data-toggle="modal" data-target="#samuel" style="background-image:url(./images/nature-1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./images/nature-2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./images/nature-3.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./images/nature-4.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./images/nature-5.jpg)"></div>
+            <!-- <div class="swiper-slide" style="background-image:url(./images/nature-6.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./images/nature-7.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./images/nature-8.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./images/nature-9.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./images/nature-1.jpg0)"></div> -->
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/swiper.js"></script>
 <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 50,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
+<script>
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        // On click
+        hamburger.addEventListener("click", function() {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            // Do something else, like open/close menu
+        });
+    </script>
+
+<!-- <script>
         var appendNumber = 4;
         var prependNumber = 1;
         var swiper = new Swiper('.swiper-container', {
@@ -147,5 +217,5 @@
             '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>'
             ]);
         });
-      </script>
+      </script> -->
 </html>
