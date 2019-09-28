@@ -6,19 +6,19 @@
         <title>samuel del rosario</title>
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/swiper.css">
-        <link rel="stylesheet" href="css/css.css">
-        <link rel="stylesheet" href="css/ccc-pages.css">
-        <link rel="stylesheet" href="css/css-modales.css">
-        <link rel="stylesheet" href="css/responsive/css-responsive.css">
-        <link href="css/hamburgers.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/swiper.css">
+        <link rel="stylesheet" href="../css/css.css">
+        <link rel="stylesheet" href="../css/ccc-pages.css">
+        <link rel="stylesheet" href="../css/css-modales.css">
+        <link rel="stylesheet" href="../css/responsive/css-responsive.css">
+        <link href="../css/hamburgers.css" rel="stylesheet">
     </head>
 <body>
         <header class="header ">
                 <div class="max-width-144">
                     <section class="cont-logo">
-                        <img src="imagenes/logo samuel.png" alt="">
+                        <img src="../imagenes/logo samuel.png" alt="">
                         <section class="text-company" style="display: none;">
                             <p style="font-weight: bold;">samuel</p>
                             <p>Guerra</p>
@@ -92,7 +92,7 @@
                         X
                     </button>
                     <section class="cont-info-design">
-                        <img src="imagenes/chocolate-embajador.jpg" alt="">
+                        <img src="../imagenes/chocolate-embajador.jpg" alt="">
                     </section>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                         X
                     </button>
                     <section class="cont-info-design">
-                        <img src="imagenes/shape-of water.jpg" alt="">
+                        <img src="../imagenes/shape-of water.jpg" alt="">
                     </section>
                 </div>
             </div>
@@ -122,58 +122,87 @@
                         X
                     </button>
                     <section class="cont-info-design">
-                        <img src="imagenes/chocolate-embajador.jpg" alt="">
+                        <img src="../imagenes/chocolate-embajador.jpg" alt="">
                     </section>
                 </div>
             </div>
         </div>
     <!------------------------- slider for job ------------------------->
-    <div class="swiper-container display-block-xs">
-        <div class="swiper-wrapper" >
-            <div data-toggle="modal" data-target="#image1" class="swiper-slide">
-                <img src="imagenes/disenos/31-agosto_Mesa de trabajo 1.png" style="width: 100%; height: auto" alt="">
+    <section class="display-block-xs background-color-black">
+            <div class="swiper-container">
+                    <!-- <h5 style="color: white; position: absolute; top: 15rem; font-size: 1.6rem; font-family: rubik; padding: 0 3rem;">haz un touch sobre la imagen para poder dar zoom</h5> -->
+                    
+                <div class="swiper-wrapper" >
+                    <div data-toggle="modal" data-target="#image1" class="swiper-slide">
+                        <img src="../imagenes/disenos/31-agosto_Mesa de trabajo 1.png" style="width: 100%; height: auto" alt="">
+                    </div>
+
+                    <div data-toggle="modal" data-target="#image2" class="swiper-slide">
+                        <img src="../imagenes/disenos/cancer de mama_Mesa de trabajo 1 copia 7.png" style="width: 100%; height: auto" alt="">
+                    </div>
+
+                    <div data-toggle="modal" data-target="#image3" class="swiper-slide">
+                        <img src="../imagenes/disenos/4-septiembre-01.png" style="width: 100%; height: auto" alt="">
+                    </div>
+                    <!-- <div data-toggle="modal" data-target="#image1" class="swiper-slide">
+                        <img src="../imagenes/disenos/31-agosto_Mesa de trabajo 1.png" style="width: 100%; height: auto" alt="">
+                    </div> -->
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
 
-            <div class="swiper-slide">
-                <img src="imagenes/disenos/cancer de mama_Mesa de trabajo 1 copia 7.png" style="width: 100%; height: auto" alt="">
+
+
+            <!-- MODALS BY SLIDER -->
+            <!-- imagen 1 -->
+            <div class="modal fade modification-slider-modal" id="image1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document" style="margin: auto;height: 100%; display: flex;align-items: center;">
+                    <div class="modal-content" style="height: fit-content; background-color: transparent;">
+                    <div class="modal-header" style="background-color: transparent">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                        <img src="../imagenes/disenos/31-agosto_Mesa de trabajo 1.png" style="width: 100%; height: auto" alt="">
+                    </div>
+                </div>
             </div>
 
-            <div class="swiper-slide">
-                <img src="imagenes/disenos/4-septiembre-01.png" style="width: 100%; height: auto" alt="">
+            <!-- imagen 2 -->
+            <div class="modal fade modification-slider-modal" id="image2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document" style="margin: auto;height: 100%; display: flex;align-items: center;">
+                    <div class="modal-content" style="height: fit-content; background-color: transparent;">
+                    <div class="modal-header" style="background-color: transparent">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                        <img src="../imagenes/disenos/cancer de mama_Mesa de trabajo 1 copia 7.png" style="width: 100%; height: auto" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="swiper-slide">
-                <img src="imagenes/disenos/31-agosto_Mesa de trabajo 1.png" style="width: 100%; height: auto" alt="">
-            </div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-    </div>
 
-    <!-- MODALS BY SLIDER -->
-    <div class="modal fade" id="image1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <!-- imagen 3 -->
+            <div class="modal fade modification-slider-modal" id="image3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document" style="margin: auto;height: 100%; display: flex;align-items: center;">
+                    <div class="modal-content" style="height: fit-content; background-color: transparent;">
+                    <div class="modal-header" style="background-color: transparent">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <img src="../imagenes/disenos/4-septiembre-01.png" style="width: 100%; height: auto" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-                <img src="imagenes/disenos/31-agosto_Mesa de trabajo 1.png" style="width: 100%; height: auto" alt="">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
+    </section>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/swiper.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/swiper.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
       effect: 'coverflow',

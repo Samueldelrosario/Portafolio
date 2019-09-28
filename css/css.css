@@ -12,6 +12,7 @@ h1, h2, h3, p{margin:0;}
 .header .max-width-144, .cont-name .max-width-144{padding: 0 5rem;}
 .position-relative{position: relative;}
 .menu-fixed{position: fixed;}
+.background-color-black{background-color: black;}
 
 .hamburger{
     display: none!important;
