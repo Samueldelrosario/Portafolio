@@ -349,7 +349,7 @@ h1, h2, h3, p{margin:0;}
 
 
 .swiper-slide {
-    background-color: red;
+    background-color: black;
     -webkit-box-shadow: 14px 10px 32px -20px rgba(0,0,0,0.32);
     -moz-box-shadow: 14px 10px 32px -20px rgba(0,0,0,0.32);
     box-shadow: 14px 10px 32px -20px rgba(0,0,0,0.32);
@@ -357,6 +357,9 @@ h1, h2, h3, p{margin:0;}
     background-size: cover;
     width: 200px;
     height: 300px;
+
+    display: flex;
+    align-items: center;
 }
 
 .swiper-pagination-bullet{
