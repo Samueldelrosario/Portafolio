@@ -1,12 +1,17 @@
 $(document).ready(function () {
 
-	var altura = $('.header').offset().top;
+	// var cal = ('.cont-name').height();
+	// var altura = $('.cont-name').offset().top;
+
+	var altura = $('.cont-name').height();
 
 	$(window).on('scroll', function(){
 		if($(window).scrollTop() >= altura){
 			$('.header').addClass('header-sombra');
+			$('.header').addClass('background-header')
 		}else{
 			$('.header').removeClass('header-sombra');
+			$('.header').removeClass('background-header');
 		}
 	})
 
@@ -84,6 +89,11 @@ $(document).ready(function () {
 			$('.header div ul').animate({
 				right: '0'
 			});
+
+			$('.header-pages div ul').animate({
+				right: '0'
+			});
+
 			$('.filter').addClass('filter-blur');
 
 		}else{
@@ -91,6 +101,10 @@ $(document).ready(function () {
 			$('.header div ul').animate({
 				right: '-55%'
 			});
+			$('.header-pages div ul').animate({
+				right: '-55%'
+			});
+
 			$('.filter').removeClass('filter-blur');
 		}
 	});
@@ -98,6 +112,9 @@ $(document).ready(function () {
 	$('.cuadro-blur').click(function(){
 			$('.cuadro-blur').fadeOut();
 			$('.header div ul').animate({
+				right: '-55%'
+			});
+			$('.header-pages div ul').animate({
 				right: '-55%'
 			});
 			$('.filter').removeClass('filter-blur');

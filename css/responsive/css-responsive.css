@@ -17,11 +17,11 @@
         justify-content: center;
     }
 
-    .header div ul{
+    .header div ul, .header-pages div ul{
         margin: 0!important;
     }
 
-    .header div ul li{
+    .header div ul li, .header-pages div ul li{
         margin-right: 3rem;
         font-size: 1.5rem;
     }
@@ -127,7 +127,7 @@
         font-size: 3.7rem;
     }
 
-    .header .max-width-144, .cont-name .max-width-144{
+    .header .max-width-144, .header-pages .max-width-144, .cont-name .max-width-144{
         padding: 0 2rem;
     }
 
@@ -154,11 +154,11 @@
     }
 
 
-    .header .max-width-144{
+    .header .max-width-144, .header-pages .max-width-144{
         height: 7.7rem;
     }
 
-    .header div ul{
+    .header div ul, .header-pages div ul{
         /* display: none; */
         position: fixed;
         top: 7.7rem;
@@ -193,7 +193,7 @@
         padding-bottom: 6rem;
     }
 
-    .header div ul li{
+    .header div ul li, .header-pages div ul li{
         margin: 0;
         padding: 2rem;
         text-align: center!important;
@@ -466,5 +466,28 @@
     .formulario-contact input, textarea, .submit{
         padding: 1.8rem 1rem;
         font-size: 1.2rem;
+    }
+
+
+
+
+
+
+    /* PAGES */
+    .imagen-father-design{
+        margin-top: 7.6rem;
+    }
+
+    .galery-sec1-Design{
+        display: block;
+    }
+
+    .galery-sec1-Design section:last-child, .galery-sec1-Design{
+        margin-top: 5rem;
+    }
+
+    .foto-1, .foto-2{
+        width: 100%;
+        height: 40rem;
     }
 }

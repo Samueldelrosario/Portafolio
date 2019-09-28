@@ -65,8 +65,48 @@ h1, h2, h3, p{margin:0;}
     background-color: #2B2B2B;
 }
 
-.foto-1, .foto-2{
+.foto-1, .foto-2, .foto-3{
     overflow: hidden;
+}
+
+.foto-3{
+    width: 100%;
+    height: 40rem;
+    background-color: #2B2B2B;
+}
+
+.foto-3:hover .foto-buscamed1, .foto-3:hover .foto-buscamed2{
+    transform: scale(1.1);
+    filter: blur(2px);
+    /* opacity: 0.5; */
+}
+
+.foto-buscamed1{
+    background-image: url(../imagenes/disenos/31-agosto_Mesa\ de\ trabajo\ 1.png);
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;   
+    /* background-image: url(../imagenes/chocolate-embajador.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.foto-buscamed2{
+    background-image: url(../imagenes/disenos/4-septiembre-01.png);
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;   
+    /* background-image: url(../imagenes/chocolate-embajador.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .title-page-designer{
@@ -112,57 +152,6 @@ h1, h2, h3, p{margin:0;}
 .hover-design:hover{
     cursor: pointer;
 }
-
-.hover-design:hover .chocolate-embajador-gallery{
-    transform: scale(1.1);
-}   
-
-.hover-design:hover .shape-water-gallery{
-    transform: scale(1.1);
-}   
-
-                /* imagenes */
-                .chocolate-embajador-gallery{ 
-                    width: 100%;
-                    height: 100%;
-                    transition: 0.3s;   
-                    /* background-image: url(../imagenes/chocolate-embajador.jpg); */
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                }
-                
-                .shape-water-gallery{ 
-                    width: 100%;
-                    height: 100%;
-                    transition: 0.3s;   
-                    /* background-image: url(../imagenes/shape-of\ water.jpg); */
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -343,4 +332,27 @@ h1, h2, h3, p{margin:0;}
 
 .display-block-xs{
     display: none;
+}
+
+
+
+
+
+
+
+
+
+
+.button-back{
+    width: 10%; 
+    padding: 1rem 2rem; 
+    background-color:white;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.7rem;
+    color:#2B2B2B;
+    margin-top: 5rem;
 }

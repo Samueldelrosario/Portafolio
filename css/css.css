@@ -9,7 +9,7 @@ body{-webkit-font-smoothing: antialiased;}
 h1, h2, h3, p{margin:0;}
 
 .cont-portafolio .max-width-144, .cont-profesional .max-width-144{padding: 18rem 15rem;}
-.header .max-width-144, .cont-name .max-width-144{padding: 0 5rem;}
+.header .max-width-144, .header-pages .max-width-144,  .cont-name .max-width-144{padding: 0 5rem;}
 .position-relative{position: relative;}
 .menu-fixed{position: fixed;}
 .background-color-black{background-color: black;}
@@ -18,8 +18,8 @@ h1, h2, h3, p{margin:0;}
     display: none!important;
 }
 
-.header{
-    background-color: #161616;
+.header, .header-pages{
+    /* background-color: #161616; */
     z-index: 222;
     width: 100%;
     position: fixed;
@@ -28,7 +28,9 @@ h1, h2, h3, p{margin:0;}
     /* veoveo y vio */
 }
 
-.header .max-width-144{
+
+
+.header .max-width-144, .header-pages .max-width-144{
     width: -webkit-fill-available;
 }
 
@@ -36,6 +38,12 @@ h1, h2, h3, p{margin:0;}
     -webkit-box-shadow: 1px 2px 25px 6px rgba(0,0,0,0.24);
     -moz-box-shadow: 1px 2px 25px 6px rgba(0,0,0,0.24);
     box-shadow: 1px 2px 25px 6px rgba(0,0,0,0.24);
+    transition: 0.3s;
+}
+
+.background-header{
+    background-color: #161616;
+    transition: 0.3s;
 }
 
 .max-width-144{
@@ -67,7 +75,7 @@ h1, h2, h3, p{margin:0;}
     /* margin-top: auto; */
 }
 
-.header .max-width-144{
+.header .max-width-144, .header-pages .max-width-144{
     width: 100%;
     height: 10.7rem;
     /* display: flex; */
@@ -79,12 +87,12 @@ h1, h2, h3, p{margin:0;}
 .cuadro-blur{
     display: none;
 }
-.header div ul{
+.header div ul, .header-pages div ul{
     display: flex;
     align-items: center;
 }
 
-.header div ul li{
+.header div ul li, .header-pages div ul li{
     list-style: none;
     margin-right:5rem;
     color: white;
@@ -93,18 +101,18 @@ h1, h2, h3, p{margin:0;}
     font-size: 1.7rem;
 }
 
-.header div ul li:last-child{
+.header div ul li:last-child, .header-pages div ul li:last-child{
     margin-right: 0;
 }
 
-.header div ul li a{
+.header div ul li a, .header-pages div ul li a{
     text-decoration: none;
     color: white;
 
     transition: 0.3s;
 }
 
-.header div ul li a:hover{
+.header div ul li a:hover, .header-pages div ul li a:hover{
     color: #3B4144;
 }
 
