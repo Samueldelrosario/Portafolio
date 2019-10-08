@@ -1,17 +1,24 @@
 $(document).ready(function () {
 
-	// var cal = ('.cont-name').height();
-	// var altura = $('.cont-name').offset().top;
-
-	var altura = $('.cont-name').height();
+	var alturaName = $('.cont-name').height();
+	var alturaProfesional = $('.cont-profesional').height() - 600;
+	//torre roberto pastorizo
 
 	$(window).on('scroll', function(){
-		if($(window).scrollTop() >= altura){
+		if($(window).scrollTop() >= alturaName){
 			$('.header').addClass('header-sombra');
 			$('.header').addClass('background-header')
 		}else{
 			$('.header').removeClass('header-sombra');
 			$('.header').removeClass('background-header');
+		}
+	})
+
+	$(window).on('scroll', function(){
+		if($(window).scrollTop() >= (alturaName + alturaProfesional)){
+			$('#object2').animate({
+				opacity: 1,
+			});
 		}
 	})
 

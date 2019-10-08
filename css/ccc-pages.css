@@ -8,37 +8,35 @@ html{font-size: 62.5%;}
 body{-webkit-font-smoothing: antialiased;}
 h1, h2, h3, p{margin:0;}
 
-.cont-portafolio .max-width-144, .cont-profesional .max-width-144{padding: 18rem 15rem;}
+.cont-portafolio .max-width-144, .cont-profesional .max-width-144{padding: 18rem 5rem;}
 .header .max-width-144, .cont-name .max-width-144{padding: 0 5rem;}
 .position-relative{position: relative;}
 .menu-fixed{position: fixed;}
 
-.imagen-father-design{
-    width: 100%;
-    height: 50%;
-    background-color: blanchedalmond;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top:10.7rem;
-}
-
-
-
 /* cont-galery */
-.cont-galery{
-    /* height: calc(100% - 10.7rem); */
-    width: 100%;
-    background-color: black;
-    /* margin-top: auto; */
-
-}
-
-.cont-galery .max-width-144{
+.cont-galery .max-width-144, .cont-galery-shazam .max-width-144, .cont-galery-illustration .max-width-144{
     padding: 10rem 5rem;
+    /* height: 100%; */
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+} 
+
+.cont-galery-illustration .max-width-144{
+    height: 100%;
+}
+
+.cont-galery, .cont-galery-shazam, .cont-galery-illustration{
+    /* height: calc(100% - 10.7rem); */
+    width: 100%;
+    background-color: black;
+    /* margin-top: auto; */
+}
+
+.cont-galery-shazam{
+    height:100%;
+    display: flex;
 }
 
 .galery-sec1-Design{
@@ -47,6 +45,19 @@ h1, h2, h3, p{margin:0;}
     column-gap: 4rem;
 
     align-items: center;
+}
+
+.galery-sec1-illustration{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 4rem;
+    align-items: center;
+
+    margin-top: 3rem;
+}
+
+.galery-sec1-illustration:last-of-type{
+    margin-top: 4rem;
 }
 
 .galery-sec1-Design:last-child{
@@ -65,7 +76,7 @@ h1, h2, h3, p{margin:0;}
     background-color: #2B2B2B;
 }
 
-.foto-1, .foto-2, .foto-3{
+.foto-1, .foto-2, .foto-3, .foto-4{
     overflow: hidden;
 }
 
@@ -75,6 +86,99 @@ h1, h2, h3, p{margin:0;}
     background-color: #2B2B2B;
 }
 
+.foto-4{
+    width: 100%;
+    /* height: 40rem; */
+    background-color: #2B2B2B;
+}
+
+.fotos-buscamed, .foto-buscamed1, .foto-buscamed2, .foto-buscamed3, .fotos-Shazam, .fotos-Shazam1, .fotos-Shazam2, .fotos-Shazam3, .fotos-Shazam4, .afiches-illustration{
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imagen-shazam2{
+    width: 100%;
+    height: auto ;
+    transition: 0.3s;
+    -webkit-transition:  0.3s;
+}
+
+.imagen-shazam2:hover{
+    transform: scale(1.1);
+}
+
+
+.foto-3:hover .foto-buscamed1, .foto-3:hover .foto-buscamed2, .foto-3:hover .foto-buscamed3:hover, .foto-1:hover .fotos-buscamed:hover{
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+
+
+/* ========== ======== ======== FOTOS PARA LAS PARTES DEL PORTAFOLIO ========== ======== ======== */
+
+.fotos-buscamed{
+    background-image: url(../imagenes/disenos/31-agosto_Mesa\ de\ trabajo\ 1.png)
+}
+
+.fotos-Shazam{
+    /* background-image: url(../imagenes/ilustraciones/shazam/logo.jpg); */
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+
+/* shazam */
+.fotos-Shazam1{
+    background-image: url(../imagenes/ilustraciones/shazam/black\ adams.jpg)
+}
+
+.fotos-Shazam2{
+    background-image: url(../imagenes/ilustraciones/shazam/shazam.jpg)
+}
+
+.fotos-Shazam3{
+    background-image: url(../imagenes/ilustraciones/shazam/dotor\ shazam.jpg)
+}
+
+.fotos-Shazam4{
+    background-image: url(../imagenes/ilustraciones/shazam/motaje\ completo.png);
+}
+
+/* afiches ilustracion */
+.afiches-illustration{
+    background-image: url(../imagenes/ilustraciones/afiches/cr7_Mesa\ de\ trabajo\ 1.png);
+    position: relative;
+    
+}
+
+.afiches-illustration::before, .fotos-Shazam::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+    /* background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(255,255,255,0) 50%,rgba(0,0,0,1) 100%); 
+    background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(255,255,255,0) 50%,rgba(0,0,0,1) 100%);  */
+
+}
+
+
+/* buscamed */
 .foto-buscamed1{
     background-image: url(../imagenes/disenos/31-agosto_Mesa\ de\ trabajo\ 1.png);
 }
@@ -85,29 +189,6 @@ h1, h2, h3, p{margin:0;}
 
 .foto-buscamed3{
     background-image: url(../imagenes/disenos/cancer\ de\ mama_Mesa\ de\ trabajo\ 1\ copia\ 7.png)
-}
-
-.fotos-buscamed, .foto-buscamed1, .foto-buscamed2, .foto-buscamed3{
-    background-size: cover;
-    background-position: center;
-
-    width: 100%;
-    height: 100%;
-    transition: 0.3s;   
-    /* background-image: url(../imagenes/chocolate-embajador.jpg); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.foto-3:hover .foto-buscamed1, .foto-3:hover .foto-buscamed2, .foto-3:hover .foto-buscamed3, .foto-1:hover .fotos-buscamed{
-    transform: scale(1.1);
-    filter: blur(2px);
-    /* opacity: 0.5; */
-}
-
-.fotos-buscamed{
-    background-image: url(../imagenes/disenos/31-agosto_Mesa\ de\ trabajo\ 1.png)
 }
 
 .title-page-designer{
@@ -128,6 +209,15 @@ h1, h2, h3, p{margin:0;}
 }
 
 /* designer */
+.imagen-father-design{
+    width: 100%;
+    height: 50%;
+    background-color: blanchedalmond;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:10.7rem;
+}
+
 .imagen-father-design{
     display: flex;
     flex-direction: column;
@@ -154,6 +244,30 @@ h1, h2, h3, p{margin:0;}
     cursor: pointer;
 }
 
+.hover-design:hover .fotos-Shazam, .hover-design:hover .afiches-illustration{
+    transform: scale(1.1);
+}
+
+
+
+/* illustration */
+.imagen-father-design-shazam{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:10.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-father-design-shazam{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 
@@ -342,18 +456,30 @@ h1, h2, h3, p{margin:0;}
 
 
 
-
+.cont-button-back{
+    display: flex;
+    justify-content: flex-end;
+}
 
 .button-back{
     width: 10%; 
     padding: 1rem 2rem; 
-    background-color:white;
+    background-color:#2B2B2B;
     display: flex; 
     justify-content: center;
     align-items: center;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-size: 1.7rem;
-    color:#2B2B2B;
+    color:white;
     margin-top: 5rem;
+    transition: 0.3s
+}
+
+.button-back:hover{
+    background-color: rgb(26, 25, 25);
+    color:white;
+    cursor: pointer;
+    transform: scale(0.9);
+
 }

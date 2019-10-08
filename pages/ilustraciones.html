@@ -1,0 +1,171 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Comptible" content="ie=edge">
+        <title>samuel del rosario</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/swiper.css">
+        <link rel="stylesheet" href="../css/css.css">
+        <link rel="stylesheet" href="../css/ccc-pages.css">
+        <link rel="stylesheet" href="../css/css-modales.css">
+        <link rel="stylesheet" href="../css/responsive/css-responsive.css">
+        <link href="../css/hamburgers.css" rel="stylesheet">
+    </head>
+<body>
+        <header class="header-pages background-color-black">
+                <div class="max-width-144">
+                    <section class="cont-logo">
+                        <img src="../imagenes/logo samuel.png" alt="">
+                        <section class="text-company" style="display: none;">
+                            <p style="font-weight: bold;">samuel</p>
+                            <p>Guerra</p>
+                        </section>
+                    </section>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../index.html">Aspecto Profesional</a></li>
+                        <li><a href="../index.html">Experiencia</a></li>
+                        <li><a href="../index.html">Portafolio</a></li>
+                        <li><a href="../index.html">Contacto</a></li>
+                    </ul>
+                    <button class="hamburger hamburger--collapse" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+        
+                    <div class="cuadro-blur"></div>
+                </div>
+            </header>
+    <section class="display-none-x">
+        <section class="imagen-father-design">
+            <h2>SAMUEL DEL ROSARIO</h2>
+            <p>ILUSTRACIONES</p>
+        </section>
+        <section class="cont-galery">
+            <section class="max-width-144">
+                <section class="galery-sec1-Design">
+
+                    <a style="text-decoration: none;" href="sliders/shazam.html">
+                        <section class="hover-design">
+                            <p class="text-page-designer">01</p>
+                            <div class="foto-1">
+                                <div class="fotos-Shazam">
+                                    <img src="../imagenes/ilustraciones/shazam/logo.jpg" alt="" style="width: 30%; height: auto">
+                                </div>
+                            </div>
+                            <h2 class="title-page-designer">Shazam</h2>
+                            <p class="text-page-designer">ver mas</p>
+                        </section>
+                    </a>
+
+                    <a style="text-decoration: none;" href="sliders/afiches-illustration.html">
+                        <section class="hover-design" data-toggle="modal" data-target="#shape-of-water">
+                            <p class="text-page-designer">02</p>
+                            <div class="foto-2">
+                                <div class="afiches-illustration"></div>
+                            </div>
+                            <h2 class="title-page-designer">Afiches</h2>
+                            <p class="text-page-designer">ver mas</p>
+                        </section>
+                    </a>
+                </section>
+                <section class="galery-sec1-Design">
+                    <a style="text-decoration: none;" href="sliders/shazam.html">
+                        <section class="hover-design">
+                            <p class="text-page-designer">03</p>
+                            <div class="foto-2"></div>
+                            <h2 class="title-page-designer">Variados</h2>
+                            <p class="text-page-designer">ver mas</p>
+                        </section>
+                    </a>
+                    <a style="text-decoration: none;" href="sliders/shazam.html">
+                        <section class="hover-design">
+                            <p class="text-page-designer">04</p>
+                            <div class="foto-1"></div>
+                            <h2 class="title-page-designer">Redes sociales</h2>
+                            <p class="text-page-designer">ver mas</p>
+                        </section>
+                    </a>
+                </section>
+            </section>
+        </section>
+        <section class="modales-general-cont">
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/swiper.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 50,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
+<script>
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        // On click
+        hamburger.addEventListener("click", function() {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            // Do something else, like open/close menu
+        });
+    </script>
+
+<!-- <script>
+        var appendNumber = 4;
+        var prependNumber = 1;
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 5,
+          spaceBetween: 30,
+          
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+        document.querySelector('.prepend-2-slides').addEventListener('click', function (e) {
+          e.preventDefault();
+          swiper.prependSlide([
+            '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>',
+            '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>'
+            ]);
+        });
+        document.querySelector('.prepend-slide').addEventListener('click', function (e) {
+          e.preventDefault();
+          swiper.prependSlide('<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>');
+        });
+        document.querySelector('.append-slide').addEventListener('click', function (e) {
+          e.preventDefault();
+          swiper.appendSlide('<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>');
+        });
+        document.querySelector('.append-2-slides').addEventListener('click', function (e) {
+          e.preventDefault();
+          swiper.appendSlide([
+            '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>',
+            '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>'
+            ]);
+        });
+      </script> -->
+</html>

@@ -92,6 +92,11 @@
     height: 50rem;
 }
 
+.cont-info-illustration img{
+    width: 50rem;
+    height: auto;
+}
+
 
 
 /*responsive**/

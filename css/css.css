@@ -8,7 +8,7 @@ html{font-size: 62.5%;}
 body{-webkit-font-smoothing: antialiased;}
 h1, h2, h3, p{margin:0;}
 
-.cont-portafolio .max-width-144, .cont-profesional .max-width-144{padding: 18rem 15rem;}
+.cont-portafolio .max-width-144, .cont-profesional .max-width-144{padding: 18rem 5rem;}
 .header .max-width-144, .header-pages .max-width-144,  .cont-name .max-width-144{padding: 0 5rem;}
 .position-relative{position: relative;}
 .menu-fixed{position: fixed;}
@@ -116,12 +116,16 @@ h1, h2, h3, p{margin:0;}
     color: #3B4144;
 }
 
+/* #object, #cont-profesional{
+    visibility: hidden;   
+} */
+
 /* name*/
 .cont-name{
     width: 100%;
     height: 100%;
     background-color: black;
-    background-image: url(../imagenes/arnold_Mesa\ de\ trabajo\ 1.png);
+    /* background-image: url(../imagenes/arnold_Mesa\ de\ trabajo\ 1.png); */
     /* background-attachment: fixed; */
     background-size: contain;
     background-repeat: no-repeat;
@@ -643,7 +647,6 @@ h1, h2, h3, p{margin:0;}
 .cont-boxes-frst-section div, .cont-boxes-second-section div{
     width: 100%;
     height: 100%;
-    /* background-color: white; */
 }
 
 .text-prueba-portafolio{
@@ -654,12 +657,13 @@ h1, h2, h3, p{margin:0;}
 }
 
 .animation-prueba{
-    background-image: url(../imagenes/shape-of\ water.jpg);
+    /* background-image: url(../imagenes/shape-of\ water.jpg); */
     background-size: cover;
 }
 
 .div-titles-portafolio{
     width: 100%;
+    
     height: 5rem;
     display: flex;
     justify-content: center;
@@ -671,11 +675,10 @@ h1, h2, h3, p{margin:0;}
     font-weight:normal;
     font-size: 1.6rem;
 
-
     color: #bfbfbf;
     margin-top: auto;
 
-    opacity: 0;
+    /* opacity: 0; */
     transition: 0.3s;
 
     hyphens: auto;
@@ -683,6 +686,7 @@ h1, h2, h3, p{margin:0;}
 
 .background-white-prueba:hover .div-titles-portafolio{
     opacity: 1;
+    font-weight: bold;
 }
 
 .ocultar-title-portafolio{
