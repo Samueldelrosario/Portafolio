@@ -24,7 +24,7 @@ h1, h2, h3, p{margin:0;}
 } 
 
 .cont-galery-illustration .max-width-144{
-    height: 100%;
+    /* height: 100%; */
 }
 
 .cont-galery, .cont-galery-shazam, .cont-galery-illustration{
@@ -35,7 +35,7 @@ h1, h2, h3, p{margin:0;}
 }
 
 .cont-galery-shazam{
-    height:100%;
+    /* height:100%; */
     display: flex;
 }
 
@@ -48,8 +48,10 @@ h1, h2, h3, p{margin:0;}
 }
 
 .galery-sec1-illustration{
+    margin: auto;
+    width: 80%;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
     column-gap: 4rem;
     align-items: center;
 

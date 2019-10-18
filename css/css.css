@@ -136,8 +136,8 @@ h1, h2, h3, p{margin:0;}
 .logo-circle{
     width: 10rem;
     height: 10rem;
-    border-radius: 50%;
-    background-color: rgba(260, 260, 260, 1);
+    /* border-radius: 50%; */
+    background-color: rgba(180, 180, 180, 1);
     bottom: -5rem;
     left: calc(50% - 5rem);
 
